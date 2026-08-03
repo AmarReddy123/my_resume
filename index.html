@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oddula Mohan Pavan Kumar Reddy Resume</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --text: #1f2937;
+            --muted: #6b7280;
+            --bg: #f9fafb;
+            --card: #ffffff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 40px auto;
+            background: var(--card);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 24px;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 24px;
+            margin-bottom: 28px;
+            flex-wrap: wrap;
+        }
+
+        header .name-block h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #111827;
+        }
+
+        header .name-block p {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+        }
+
+        .contact {
+            text-align: right;
+            font-size: 0.95rem;
+            color: var(--muted);
+        }
+
+        .contact a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 28px;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            margin: 0 0 12px;
+            color: #111827;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 12px;
+        }
+
+        .item {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 8px;
+        }
+
+        .item .role {
+            font-weight: 600;
+        }
+
+        .item .meta {
+            color: var(--muted);
+            font-size: 0.95rem;
+            text-align: right;
+        }
+
+        .item .desc {
+            grid-column: 1 / -1;
+            color: #374151;
+            margin-top: 2px;
+        }
+
+        ul {
+            margin: 6px 0 0 18px;
+            padding: 0;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .skills-list li {
+            background: #eff6ff;
+            color: #1e40af;
+            border: 1px solid #dbeafe;
+            padding: 4px 10px;
+            border-radius: 999px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-top: 32px;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 16px;
+        }
+
+        @media (max-width: 700px) {
+            .container { margin: 16px; padding: 20px; }
+            header { flex-direction: column; align-items: flex-start; }
+            .contact { text-align: left; }
+            .item { grid-template-columns: 1fr; }
+            .item .meta { text-align: left; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Header: Name, Role, Contact -->
+    <header>
+        <div class="name-block">
+            <h1>Oddula Mohan Pavan Kumar Reddy</h1>
+            <p>Cloud & Big Data Engineer | Automation Enthusiast</p>
+        </div>
+        <div class="contact">
+            <div>Email: <a href="mailto:your.email@example.com">oddulaamar399@email.com</a></div>
+            <div>Phone: +91 8919875216</div>
+            <div>Location: Tadepalle, Andhra Pradesh, India</div>
+            <div>
+                GitHub: <a href="https://github.com/pavan-kumar-reddy-oddula-3b4602212" target="_blank" rel="noopener">github.com/pavan-kumar-reddy-oddula-3b4602212</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section>
+        <h2>About Me</h2>
+        <p>
+           IT professional/student with a strong focus on cloud computing (AWS, Azure, GCP) and big data
+    ecosystems (Hadoop, Hive, Cassandra, HBase). Passionate about automating learning workflows and
+    building reliable data pipelines. Interested in serverless architectures, container orchestration
+    (Docker, Kubernetes), and IoT/AI-driven projects.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section>
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="item">
+                <div class="role">B.Tech in Computer Science / IT (AI & DS)</div>
+                <div class="meta">KL University • 2023–2027</div>
+                <div class="desc">
+                    Relevant coursework: Cloud Computing, Big Data, Distributed Systems, Databases, Networking.
+                </div>
+            </div>
+            <!-- Add more entries if needed -->
+        </div>
+    </section>
+
+    <!-- Experience / Projects -->
+    <section>
+        <h2>Experience & Projects</h2>
+        <div class="grid">
+            <div class="item">
+                <div class="role">Cloud & ETL Workflow Project</div>
+                <div class="meta">Personal / Academic • 2025</div>
+                <div class="desc">
+                    Designed serverless/data pipelines using AWS/GCP, containerized services with Docker,
+                    and orchestrated workloads with Kubernetes. Implemented ETL flows and data storage
+                    with services like S3, Athena, or DynamoDB.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="role">Automated Quiz & LMS Integration</div>
+                <div class="meta">Personal / Academic • 2025</div>
+                <div class="desc">
+                    Built automation for quiz generation/evaluation in an LMS using Python/Node.js, REST APIs,
+                    and CI/CD practices. Focused on reproducible test data and deterministic workflows.
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="role">IoT + AI Chip Exploration</div>
+                <div class="meta">Concept / Learning Project • 2026</div>
+                <div class="desc">
+                    Explored IoT device integration and AI hardware concepts; prototyped data collection
+                    and basic analytics pipelines.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section>
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>AWS</li>
+            <li>Azure</li>
+            <li>Google Cloud</li>
+            <li>Docker</li>
+            <li>Kubernetes</li>
+            <li>Serverless (Lambda, etc.)</li>
+            <li>Hadoop</li>
+            <li>Hive</li>
+            <li>Cassandra</li>
+            <li>HBase</li>
+            <li>Python</li>
+            <li>Node.js</li>
+            <li>Java</li>
+            <li>Linux</li>
+            <li>REST APIs</li>
+            <li>CI/CD</li>
+        </ul>
+    </section>
+
+    <!-- Hobbies & Interests -->
+    <section>
+        <h2>Hobbies & Interests</h2>
+        <ul>
+            <li>Designing cloud-native architectures and data pipelines</li>
+            <li>Automating learning platforms and quiz systems</li>
+            <li>Building IoT prototypes and exploring AI hardware</li>
+            <li>Learning generative AI, cloud security, and advanced analytics</li>
+        </ul>
+    </section>
+
+    <footer>
+        © 2025 Oddula Mohan Pavan Kumar Reddy. Built with HTML + CSS.
+    </footer>
+
+</div>
+
+</body>
+</html>
